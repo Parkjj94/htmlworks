@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-redius 속성</title>
+    <style>
+        .round{
+            width: 250px;
+            height: 200px;
+            border: 2px solid #f00;
+            border-radius: 10%; /*10% 박스의 크기의 10%-30px*/
+            margin: 10px;
+            display: inline-block; /*디비젼 태그는 기본적으로 수직, 디스플레이 인라인 블록은 수직으로 해줌*/
+        }
+        #bg1{
+            background:url("images/cat.jpg");
+            background-size: cover; /*cover - 축소되어서 꽉 차게 표시 */
+        }
+        #bg2{
+            background:url("images/cat.jpg") no-repeat;
+            background-size: contain; /*cover - 축소되어서 꽉 차게 표시 */
+        }
+    </style>
+</head>
+<body>
+    <div class="round"></div>
+    <div class="round" id="bg1"></div>
+    <div class="round" id="bg2"></div>
+</body>
+</html>

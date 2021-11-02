@@ -1,15 +1,19 @@
+*{ /* 전체 선택자 - 태그 요소들의 마진과 패딩을 0으로 설정 */
+    margin: 0; padding: 0; /* 웹 화면에 딱 붙게 설계하려면 사용 */
+    box-sizing: border-box;
+}
 #container{
     width: 1000px;
     margin: 0 auto;
-
 }
 header{
-    width: 978px; /*width를 생략하면 상대적으로 비율을 자동으로 맞춤*/
+    /* width: 978px; width를 생략하면 상대적으로 비율을 자동으로 맞춤 */
+    width: 100%;
     height: 100px;
     border: 1px solid #ccc;
     padding: 10px;
-    /*넓이는 아예 생략하거나 978px(테두리와 패딩을 제외한 값)을 넣어줘야함*/
-    /*패딩 10x2 보더 1x2 = 1000-22=978*/
+    /* 넓이는 아예 생략하거나 978px(테두리와 패딩을 제외한 값)을 넣어줘야함 */
+    /* 패딩 10x2 보더 1x2 = 1000-22=978 */
 }
 section{
     width: 620px;
